@@ -7,8 +7,8 @@
     "dev-server": "cd %npm_package_config_addIn% && npm run dev-server",
     "sideload": "cd %npm_package_config_addIn% && npm run sideload",
     "appium": "appium --port %npm_package_config_port% --address %npm_package_config_address%",
-    "suite": "node index.js",
-    "e2e": "npm-run-all sideload suite",
+    "test": "node index.js",
+    "e2e": "npm-run-all sideload test",
     "postinstall": "cd %npm_package_config_addIn% && npm install",
     "servers": "run-p dev-server appium"
   },
@@ -27,11 +27,8 @@
     "integration"
   ],
   "author": "phlppnhllngr",
-  "license": "NONE",
-  "devDependencies": {
-    "generator-office": "^1.2.4",
-    "yo": "^2.0.6"
-  },
+  "license": "Unlicense",
+  "devDependencies": {},
   "dependencies": {
     "nan": "^2.14.0",
     "windows-build-tools": "^5.1.0",
@@ -40,5 +37,11 @@
     "npm-run-all": "^4.1.5",
     "wd": "^1.11.2",
     "winctl": "^1.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phlppnhllngr/office-addin-integration-testing"
+  },
+  "homepage": "https://github.com/phlppnhllngr/office-addin-integration-testing#readme",
+  "private": true
 }
