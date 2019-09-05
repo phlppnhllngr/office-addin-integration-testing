@@ -7,7 +7,7 @@
 - ```git clone```
 - ```npm install``` (admin)
 - ```npm run servers```
-- ```npm run e2e``
+- ```npm run e2e```
 <br/>
 - [Word CLI](https://support.office.com/en-us/article/command-line-switches-for-microsoft-office-products-079164cd-4ef5-4178-b235-441737deb3a6)
 - [WinAppDriver API](https://github.com/microsoft/WinAppDriver)
