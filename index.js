@@ -35,7 +35,7 @@ const { sleep, assert, toHexString } = require('./helper');
      * Without prior sideloading: Word must be started manually or by replacing appTopLevelWindow with:
      *    desiredCapabilities.app = "WINWORD.EXE",
      *    desiredCapabilities.appArguments = "/q /w"
-     * Note that this only works if the Word ribbon bar has the launch button for the add-in (sideloading adds this button automatically).
+     * only works if the Word ribbon bar has the launch button for the add-in (sideloading adds this button automatically).
      */
     const wordwin = await winctl.FindByTitle("Word"); // Assuming there's only 1 window with 'Word' in title.
     const winHandle = wordwin.getHwnd();
@@ -44,7 +44,7 @@ const { sleep, assert, toHexString } = require('./helper');
 
     /**
      * Elements' names, classes and IDs can be found using inspect.exe from the Windows SDK.
-     * It's located under "C:\Program Files (x86)\Windows Kits\10\bin\<version>\x64".
+     * Located under "C:\Program Files (x86)\Windows Kits\10\bin\<version>\x64".
      * The mapping between attributes as shown by inspect.exe and webdriver locator values can be seen here: https://github.com/microsoft/WinAppDriver
      */
     const commandsGroup = await client

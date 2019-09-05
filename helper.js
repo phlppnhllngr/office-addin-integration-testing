@@ -1,5 +1,4 @@
-// Replace with mocha, chai, ...
-function assert(condition, message = 'Expected something else') {
+function assert(condition, message = 'AssertionError') {
     if (!condition) {
         throw new Error(message.red);
     }

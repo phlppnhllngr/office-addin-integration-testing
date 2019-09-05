@@ -1,7 +1,7 @@
 {
   "name": "office-addin-integration-testing",
   "version": "1.0.0",
-  "description": "Integration testing Office Add-ins with Appium and Node.js",
+  "description": "office-addin-integration-testing",
   "main": "index.js",
   "scripts": {
     "dev-server": "cd %npm_package_config_addIn% && npm run dev-server",
@@ -23,8 +23,8 @@
     "Office Add-in",
     "TaskPane Add-in",
     "e2e",
-    "end-to-end",
-    "integration"
+    "integration",
+    "test"
   ],
   "author": "phlppnhllngr",
   "license": "Unlicense",
