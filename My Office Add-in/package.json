@@ -1,5 +1,6 @@
 {
     "name": "office-addin-taskpane-js",
+    "description": "npm i yeoman generator-office@1.2.4 -> yo office"
     "version": "0.0.1",
     "repository": {
         "type": "git",
